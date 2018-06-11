@@ -1,0 +1,15 @@
+version: '2'
+services:
+  kafka:
+    image: sheepkiller/kafka-manager
+    ports:
+      - "8001:9000"
+    environment:
+      ZK_HOSTS: zoo1:2181,zoo2:2181,zoo3:2181
+      APPLICATION_SECRET: admin
+    container_name: kafka-manager
+
+networks:
+    default:
+        external:
+            name: apps
