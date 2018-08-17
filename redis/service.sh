@@ -11,7 +11,6 @@ stop)
     docker stop redis
     ;;
 restart)
-    docker stop redis
-    docker start redis
+    docker restart redis
     ;;
 esac

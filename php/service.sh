@@ -14,7 +14,6 @@ stop)
     docker stop php
     ;;
 restart)
-    docker stop php
-    docker start php
+    docker restart php
     ;;
 esac

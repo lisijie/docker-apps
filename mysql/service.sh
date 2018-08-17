@@ -13,7 +13,6 @@ stop)
     docker stop mysql
     ;;
 restart)
-    docker stop mysql
-    docker start mysql
+    docker restart mysql
     ;;
 esac
